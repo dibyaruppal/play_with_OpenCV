@@ -45,7 +45,25 @@
       
   **Result**: The segmented image highlights different regions based on colour clusters, effectively separating distinct objects or areas within the original RGB image.
   
-
+## TASK 4.   Algorithm to count number of Books in the shelf:
+  Steps performed int this tasks are:
+      • Removal of text from the image: Using keras-ocr detection method 
+      
+      • Canny Edge Detection: Apply the Canny edge detection algorithm to highlight edges of the books. Adjust parameters such as the low and high thresholds to control the sensitivity of edge detection.
+      
+      • Dilation: Output of the canny edges are dilated to make those edges prominent.
+      
+      • Superimposition: superimpose original and dilated image.
+      
+      • Remove Background: remove background of the image to allow contour detector to focus only on the foreground object.
+      
+      • Grayscale conversion and Binary Image conversion: Transform the original image to grayscale using OpenCV's cvtColor function and then apply thresholding to create Binary image.
+      
+      • Contour Detection: Detect contours from the binary images.
+      
+      • Create Bounding Boxes: Create bounding boxes from the detected contours and filter the boxes based on perimeters.   
+      
+  **Result**: The final output is an image with bounding boxex delineating each of the book, providing a clear visual representation of its spatial extent.
   
 ## Conclusion:
 The application of these OpenCV-based image processing techniques allows for a comprehensive analysis of images, including the identification of foreground objects, detection of edges, and segmentation based on colour clusters. These methods provide valuable insights for tasks such as object recognition, feature extraction, and image understanding.
