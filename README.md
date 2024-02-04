@@ -64,6 +64,15 @@
       • Create Bounding Boxes: Create bounding boxes from the detected contours and filter the boxes based on perimeters.   
       
   **Result**: The final output is an image with bounding boxex delineating each of the book, providing a clear visual representation of its spatial extent.
+
+  ## TASK 5.   Remove shadow from road:
+  Steps performed int this tasks are:
+  
+      • ROI based masking.
+      
+      • Fill pixel with values from nearby area. 
+      
+  **Result**: The final output is an image with shadow region filled with pixel value of nearby region.
   
 ## Conclusion:
 The application of these OpenCV-based image processing techniques allows for a comprehensive analysis of images, including the identification of foreground objects, detection of edges, and segmentation based on colour clusters. These methods provide valuable insights for tasks such as object recognition, feature extraction, and image understanding.
