@@ -65,12 +65,34 @@
       
   **Result**: The final output is an image with bounding boxex delineating each of the book, providing a clear visual representation of its spatial extent.
 
-  ## TASK 5.   Remove shadow from road:
+## TASK 5.   Remove shadow from road:
   Steps performed int this tasks are:
   
       • ROI based masking.
       
       • Fill pixel with values from nearby area. 
+      
+  **Result**: The final output is an image with shadow region filled with pixel value of nearby region.
+
+## TASK 6.   Creation of Panorama - image stiching:
+  Steps performed int this tasks are:
+
+      • SIFT/SURF -> indentifies descriptor in image
+      
+      • findHomography - method to create Hompgraphy matrix using RANSAC Algorithm.
+      
+      • warpPerspective - method to warp image. 
+      
+  **Result**: The final output is an image with shadow region filled with pixel value of nearby region.
+
+## TASK 7.   Classification problem using Bag of Visual Words Technique:
+  Steps performed for Bag-of-visual words approach are:
+  
+      • SIFT/SURF -> indentifies descriptor in image
+      
+      • K-means -> Create features of image (Visual Words).
+    
+      • SVM/Logistic Regression/KNN -> Classfier used. 
       
   **Result**: The final output is an image with shadow region filled with pixel value of nearby region.
   
